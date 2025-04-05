@@ -69,6 +69,40 @@ pip install numpy pandas scikit-learn matplotlib mediapipe
 3. Run all cells to train and evaluate the model.
 4. Use the trained model to classify gestures in real-time.
 
+# Hand Gesture Classification using MediaPipe & RandomForest
+
+This project classifies hand gestures using MediaPipe landmarks extracted from video frames. It uses a RandomForestClassifier trained on landmark coordinates.
+---
+# Conclusion
+## 🚀 Project Highlights
+- Uses MediaPipe for hand detection and tracking
+- Trained a Random Forest model on HaGRID-based dataset
+- Supports video input and real-time gesture classification
+
+## 🧠 Model Used
+- RandomForestClassifier (scikit-learn)
+
+## 📊 Accuracy
+Achieved ~95% accuracy on validation data.
+
+## 📦 How to Run
+1. Upload the CSV dataset
+2. Run the notebook
+3. Upload a video to test gesture recognition
+
+## 📁 Files
+- `notebook.ipynb`: Main code
+- `hand_landmarks_data.csv`: Dataset
+- `video_sample.mp4`: Demo video
+- `model.pkl`: Saved model
+
+## 🤝 Credits
+- MediaPipe for hand tracking
+- HaGRID dataset
+
+
+
+
 ---
 ## Author
 🚀 **Developed by [_Rowaina_]**
