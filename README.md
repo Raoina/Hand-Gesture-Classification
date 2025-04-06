@@ -1,13 +1,14 @@
 # Hand Gesture Classification Using MediaPipe Landmarks from the HaGRID Dataset
 
 ## Overview
-This project focuses on classifying hand gestures using landmark data extracted from the **HaGRID (Hand Gesture Recognition Image Dataset)** using **MediaPipe**.
+This project focuses on classifying hand gestures using landmark data extracted from the HaGRID (Hand Gesture Recognition Image Dataset) using MediaPipe.
 
 The input is a CSV file containing **x, y, and z coordinates** of hand keypoints extracted using MediaPipe. The output is a trained machine learning model that classifies gestures into predefined classes.
 
 Through this project, we explore **data preprocessing, visualization, model training, and performance evaluation**, along with proper documentation and reproducible results.
 
 ---
+
 ## Dataset Details
 The **HaGRID dataset** consists of **18 classes** of hand gestures. Each gesture is represented by **21 hand landmarks per hand** extracted using **MediaPipe**.
 
@@ -16,7 +17,9 @@ The CSV file contains:
 - **Gesture labels** corresponding to each set of landmarks.
 
 ---
+
 ## Project Deliverables
+
 ### 1. Google Colab Notebook
 A well-documented **Google Colab notebook** will be uploaded to **GitHub**. The notebook includes:
 - **Data Loading**: Reading the CSV file containing hand landmarks and labels.
@@ -26,7 +29,13 @@ A well-documented **Google Colab notebook** will be uploaded to **GitHub**. The 
   - Handling missing values.
   - Splitting data into training and testing sets.
 - **Model Training**:
-  - Implementing at least **three** machine learning models (e.g., **Random Forest, SVM**).
+  - Implementing multiple machine learning models, including:
+    - **Logistic Regression**
+    - **k-Nearest Neighbors (k-NN)**
+    - **Support Vector Machine (SVM)**
+    - **Decision Tree Classifier**
+    - **Random Forest Classifier** (chosen as the best model)
+    - **Gradient Boosting Classifier**
   - Comparing their performance on gesture classification.
 - **Evaluation**:
   - Reporting **accuracy, precision, recall, and F1-score** for each model.
@@ -39,12 +48,14 @@ A well-documented **Google Colab notebook** will be uploaded to **GitHub**. The 
 - The video is uploaded to **Google Drive** with a publicly accessible link.
 
 ---
+
 ## Evaluation Criteria
 1. **Code Quality**: Clean, well-documented, and reproducible.
 2. **Model Performance**: Accuracy and robustness of trained models.
 3. **Visualization**: Clarity and effectiveness of data and results visualization.
 
 ---
+
 ## Important Notes
 - **Re-centering Hand Landmarks**:
   - Normalize **(x, y)** coordinates by making the **wrist point the origin**.
@@ -56,39 +67,54 @@ A well-documented **Google Colab notebook** will be uploaded to **GitHub**. The 
   - Ensure both **GitHub repository** and **Google Drive video** links are **public** and accessible.
 
 ---
+
 ## Installation & Usage
+
 ### Requirements
 Install the necessary dependencies:
 ```bash
 pip install numpy pandas scikit-learn matplotlib mediapipe
 ```
+# Hand Gesture Classification Using MediaPipe Landmarks from the HaGRID Dataset
 
-### Running the Notebook
-1. Open the **Google Colab Notebook**.
-2. Upload the dataset CSV file.
-3. Run all cells to train and evaluate the model.
-4. Use the trained model to classify gestures in real-time.
+## Overview
+This project focuses on classifying hand gestures using landmark data extracted from the HaGRID (Hand Gesture Recognition Image Dataset) using MediaPipe.
 
-# Hand Gesture Classification using MediaPipe & RandomForest
+The input is a CSV file containing **x, y, and z coordinates** of hand keypoints extracted using MediaPipe. The output is a trained machine learning model that classifies gestures into predefined classes.
 
-This project classifies hand gestures using MediaPipe landmarks extracted from video frames. It uses a RandomForestClassifier trained on landmark coordinates.
+Through this project, we explore **data preprocessing, visualization, model training, and performance evaluation**, along with proper documentation and reproducible results.
+
 ---
-# Conclusion
-## 🚀 Project Highlights
-- Uses MediaPipe for hand detection and tracking
-- Trained a Random Forest model on HaGRID-based dataset
-- Supports video input and real-time gesture classification
 
-## 🧠 Model Used
-- RandomForestClassifier (scikit-learn)
+## 🚀 Project Highlights
+- Uses **MediaPipe** for hand detection and tracking.
+- Trained a **Random Forest** model on the HaGRID-based dataset.
+- Supports **video input** and **real-time gesture classification**.
+
+---
+
+## 🧠 Models Used
+- **RandomForestClassifier** (scikit-learn) - **Best performing model**
+- **Logistic Regression**
+- **k-Nearest Neighbors (k-NN)**
+- **Support Vector Machine (SVM)**
+- **Decision Tree Classifier**
+- **Gradient Boosting Classifier**
+
+---
 
 ## 📊 Accuracy
 Achieved ~95% accuracy on validation data.
 
+---
+
 ## 📦 How to Run
-1. Upload the CSV dataset
-2. Run the notebook
-3. Upload a video to test gesture recognition
+1. Open the **Google Colab Notebook**.
+2. Upload the **CSV dataset**.
+3. Run all cells to train and evaluate the model.
+4. Use the trained model to classify gestures in real-time.
+
+---
 
 ## 📁 Files
 - `notebook.ipynb`: Main code
@@ -96,15 +122,15 @@ Achieved ~95% accuracy on validation data.
 - `video_sample.mp4`: Demo video
 - `model.pkl`: Saved model
 
+---
+
 ## 🤝 Credits
-- MediaPipe for hand tracking
-- HaGRID dataset
-
-
-
+- **MediaPipe** for hand tracking.
+- **HaGRID dataset**.
 
 ---
+
 ## Author
-🚀 **Developed by [_Rowaina_]**
+🚀 **Developed by [Rowaina]**
 
 Good luck! 🎯
